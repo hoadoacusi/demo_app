@@ -11,10 +11,10 @@ User.create!(name:  "Quynh",
              password_confirmation: "123123",
              admin:true)
 
-50.times do |n|
+20.times do |n|
   name  = Faker::Name.name
   email = "quynh#{n+1}@gmail.com"
-  password = "password"
+  password = "123123"
   User.create!(name:  name,
                email: email,
                password:              password,
